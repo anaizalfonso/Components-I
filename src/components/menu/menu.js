@@ -26,11 +26,13 @@ function menuMaker(linksArray) {
   
   hamMenu.addEventListener('click', () => {
     menuWrapper.classList.toggle('menu--open');
+   
   })
+
   return menuWrapper;
 }
-document
-.querySelector('.header').appendChild(menuMaker(menuItems));
+console.log(menuMaker(menuItems));
+document.querySelector('.header').appendChild(menuMaker(menuItems));
 
 /*
   Step 1: Write a component called 'menuMaker' to create a menu like the markup below:
